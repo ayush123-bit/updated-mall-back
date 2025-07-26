@@ -12,10 +12,14 @@ const cloudinary = require('../config/Cloudinary');
 const moment = require('moment');
 const axios=require('axios')
 const multer = require('multer');
+const multer = require('cors');
 const path=require('path');
 require('dotenv').config();
 
-
+app.use(cors({
+  origin: 'https://dapper-chaja-9ec520.netlify.app',
+  credentials: true, 
+}));
 const { OAuth2Client } = require('google-auth-library');
 
 
