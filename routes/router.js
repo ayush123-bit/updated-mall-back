@@ -1,4 +1,5 @@
 const express = require('express');
+const app = express();
 const router = express.Router();
 const User = require('../model/Register'); // Import the User model
 // Route to handle user registration
