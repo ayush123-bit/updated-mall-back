@@ -12,7 +12,7 @@ const cloudinary = require('../config/Cloudinary');
 const moment = require('moment');
 const axios=require('axios')
 const multer = require('multer');
-const multer = require('cors');
+const cors = require('cors');
 const path=require('path');
 require('dotenv').config();
 
