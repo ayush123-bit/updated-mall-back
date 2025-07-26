@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
-
-mongoose.connect("Your Mongo Uri")
+require("dotenv").config();
+mongoose.connect(process.env.MONGO_URI)
   .then(() => {
     console.log("Connection Successful");
   })
